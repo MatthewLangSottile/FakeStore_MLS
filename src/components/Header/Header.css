@@ -1,0 +1,35 @@
+h1 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #3A4895;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 25px;
+    color: #3A4895;
+}
+
+.cart-icon {
+ font-size: 3em;
+}
+
+.cart-container {
+    display: flex;
+}
+
+.cart-count-container {
+    position: absolute;
+    right: 32px;
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
