@@ -1,15 +1,17 @@
 h1 {
     font-size: 35px;
     font-weight: 700;
-    color: #3A4895;
+    color: var(--C_DarkBlue);
+    margin-left: 40px;
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 25px 40px;
-    color: #3A4895;
+    color: var(--C_DarkBlue);
+    border-bottom: 1px black solid;
+    height: 100px
 }
 
 .cart-icon {
@@ -18,13 +20,14 @@ h1 {
 
 .cart-container {
     display: flex;
+    margin-right: 40px;
 }
 
 .cart-count-container {
     position: absolute;
     right: 47px;
-    color: white;
-    background-color: red;
+    color: var(--C_White);
+    background-color: var(--C_Red);
     border-radius: 50%;
     height: 25px;
     width: 25px;

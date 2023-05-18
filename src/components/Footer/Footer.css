@@ -1,0 +1,15 @@
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 66px;
+    background-color: var(--C_DarkBlue);
+}
+
+.footer-left {
+    margin-left: 40px;
+}
+
+.footer-right {
+    margin-right: 40px;
+}
