@@ -5,13 +5,7 @@ import axios from 'axios'
 import {titleCase} from "title-case"
 
 
-
-
-
-
-
 function Homepage() {
-
 
 
 //create state for products
@@ -20,8 +14,8 @@ const [products, setProducts] = useState([])
 //create state for categories
 const [categories, setCategories] = useState([])
 
-const handleFilter = ({item}) => {
-  axios.get(`https://fakestoreapi.com/products/category/${item}`)
+const handleFilter = ({category}) => {
+  axios.get(`https://fakestoreapi.com/products/category/${category}`)
   .then(result=>{
     console.log(result.data)
     setProducts(result.data)
@@ -33,7 +27,7 @@ const handleFilter = ({item}) => {
         <div className="filter-container">
           <button onClick={() => window.location.reload(false)}>All</button>
           {
-          categories.map(item=><button key={item} onClick={() => handleFilter({item})}>{titleCase(item)}</button>)
+          categories.map(category=><button key={category} onClick={() => handleFilter({category})}>{titleCase(category)}</button>)
           }
         </div>
         <div className="product-grid-container">
@@ -75,7 +69,7 @@ useEffect(
         <div className="filter-container">
           <button onClick={() => window.location.reload(false)}>All</button>
           {
-          categories.map(item=><button key={item} onClick={() => handleFilter({item})} >{titleCase(item)}</button>)
+          categories.map(category=><button key={category} onClick={() => handleFilter({category})} >{titleCase(category)}</button>)
           }
         </div>
         <div className="product-grid-container">
