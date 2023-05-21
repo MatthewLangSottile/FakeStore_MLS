@@ -8,7 +8,7 @@ function Header() {
       <h1>Fake Store</h1>
       <div className="cart-container">
         <AiOutlineShoppingCart className="cart-icon" />
-            <div class="cart-count-container">
+            <div className="cart-count-container">
                 <p className="cart-count-label">7</p>
             </div>
       </div>

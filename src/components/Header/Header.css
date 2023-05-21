@@ -1,8 +1,8 @@
 h1 {
-    font-size: 35px;
+    font-size: 38px;
     font-weight: 700;
     color: var(--C_DarkBlue);
-    margin-left: 40px;
+    margin-left: 50px;
 }
 
 .header-container {
@@ -10,29 +10,32 @@ h1 {
     justify-content: space-between;
     align-items: center;
     color: var(--C_DarkBlue);
-    border-bottom: 1px black solid;
-    height: 100px
+    background-color: var(--C_BG);
+    height: 158px;
 }
 
 .cart-icon {
- font-size: 3em;
+ font-size: 3.5em;
 }
 
 .cart-container {
     display: flex;
-    margin-right: 40px;
+    margin-right: 50px;
+    position: relative;
 }
 
 .cart-count-container {
     position: absolute;
-    right: 47px;
+    right: 9px;
     color: var(--C_White);
     background-color: var(--C_Red);
     border-radius: 50%;
-    height: 25px;
-    width: 25px;
+    height: 28px;
+    width: 28px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
 

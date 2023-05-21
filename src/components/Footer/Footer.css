@@ -2,14 +2,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 66px;
+    height: 100px;
     background-color: var(--C_DarkBlue);
 }
 
 .footer-left {
-    margin-left: 40px;
+    margin-left: 50px;
 }
 
 .footer-right {
-    margin-right: 40px;
+    margin-right: 50px;
 }
+
+.footer-container a, .footer-container p {
+    text-decoration: none;
+    color: var(--C_FooterWht);
+    font-size: 18px;
+    font-weight: 300;
+  }

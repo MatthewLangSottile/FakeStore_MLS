@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className="footer-container">
       <p className="footer-left">Made with ❤️ by MLS </p>
-      <a className="footer-right" href="#">Contact Us</a>
+      <a className="footer-right" href="/contact">Contact Us</a>
     </div>
   )
 }

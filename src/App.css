@@ -1,11 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
 :root {
  --C_DarkBlue: #3A4895;
  --C_MedBlue: #5264C3;
  --C_Black: #282828;
- --C_Gray: #949494; 
- --C_White: #FAFAFA;
+ --C_Gray: #949494;
+ --C_LtGray: #EFEFEF; 
+ --C_BG: #FAFAFA;
+ --C_White: #FFFFFF;
+ --C_FooterWht: #FCFCFC;
+ --C_IconGray: #E7E7E7;
  --C_Red:  #F90505;
 
 }
@@ -14,9 +18,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family:"Inter", sans-serif;
+  background-color: var(--BG)
 }
 
-a, p {
+ a {
   text-decoration: none;
-  color: var(--C_White)
-}
+} 
+
