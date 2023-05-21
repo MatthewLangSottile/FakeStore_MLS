@@ -20,3 +20,23 @@
     font-size: 18px;
     font-weight: 300;
   }
+
+
+
+  @media (max-width: 754px) {
+    .footer-container {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-left {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    
+    .footer-right {
+        margin-right: 0;
+    }
+
+  }
