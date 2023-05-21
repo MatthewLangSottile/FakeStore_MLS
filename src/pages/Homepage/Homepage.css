@@ -53,8 +53,13 @@
   }
 
   @media (max-width: 754px) {
+
+    .homepage-container {
+        padding: 0 0;
+    }
     .product-grid-container {
-        grid-template-columns: 1fr
+        grid-template-columns: 1fr;
+        
     }
     
     .filter-container {
