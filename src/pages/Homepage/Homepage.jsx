@@ -14,30 +14,6 @@ const [products, setProducts] = useState([])
 //create state for categories
 const [categories, setCategories] = useState([])
 
-const handleFilter = ({category}) => {
-  axios.get(`https://fakestoreapi.com/products/category/${category}`)
-  .then(result=>{
-    console.log(result.data)
-    setProducts(result.data)
-  })
-  .catch(err=>console.log(err))
-
-  return (
-    <div className="homepage-container">
-        <div className="filter-container">
-          <button onClick={() => window.location.reload(false)}>All</button>
-          {
-          categories.map(category=><button key={category} onClick={() => handleFilter({category})}>{titleCase(category)}</button>)
-          }
-        </div>
-        <div className="product-grid-container">
-            {
-            products.map(item=><ProductCard key={item.id} product={item} />)
-            }
-        </div>
-    </div>
-  )
-}
 
 //useEffect to make API call when page loads
 useEffect(
@@ -61,6 +37,18 @@ useEffect(
   }, [] //empty array means one time when page loads 
     
 )
+
+const handleFilter = ({category}) => {
+  axios.get(`https://fakestoreapi.com/products/category/${category}`)
+  .then(result=>{
+    console.log(result.data)
+    // update state with new filtered set of products
+    setProducts(result.data)
+  })
+  .catch(err=>console.log(err))
+}
+
+
 
 
 
