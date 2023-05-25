@@ -1,0 +1,17 @@
+.details-container {
+    display: flex;
+    height: calc(100vh - 258px);
+    width: 100vw;
+
+}
+
+.details-container img {
+    max-height: 600px;
+    /* max-width: 400px; */
+    object-fit: cover;
+    width: 50%;
+}
+
+.product-details.area {
+    width: 50%;
+}
