@@ -33,12 +33,14 @@ function ProductDetails() {
 
   return (
     <div className="details-container">
-       <img src={product?.image} className="product-image" />
-       <div className="product-details-area">
-          <p className="product-title">{product?.title}</p>
-          <p className="product-price">${product?.price?.toFixed(2)} </p>
+       <div className="product-image-area">
+            <img src={product?.image} className="product-image" />
+       </div>
+       <div className="product-det-area">
+          <p className="product-det-title">{product?.title}</p>
+          <p className="product-det-price">${product?.price?.toFixed(2)} </p>
           <h2>Description</h2>
-          <p className="product-description">{product?.description} </p>
+          <p className="product-det-description">{product?.description} </p>
           <button>Add to Cart</button>
        </div>
     </div>

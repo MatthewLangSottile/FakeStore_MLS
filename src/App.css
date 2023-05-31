@@ -11,6 +11,8 @@
  --C_FooterWht: #FCFCFC;
  --C_IconGray: #E7E7E7;
  --C_Red:  #F90505;
+ --C_Yellow: #FFD814;
+
 
 }
 *{
@@ -23,5 +25,6 @@
 
  a {
   text-decoration: none;
+  
 } 
 
