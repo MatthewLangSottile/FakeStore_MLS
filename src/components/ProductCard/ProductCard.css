@@ -30,7 +30,7 @@
   
 }
 
-.favorite-icon-area {
+.cart-icon-area {
     height: 35px;
     width: 35px;
     position: absolute;
@@ -43,8 +43,14 @@
     align-items: center;
 }
 
-.favorite-icon {
-    color: var(--C_White)
+.cart-heart-icon {
+    color: var(--C_MedBlue);
+    font-size: 1.25em;
+}
+
+.unfilled {
+    color: var(--C_White);
+
 }
 
 .product-title {

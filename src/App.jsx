@@ -6,6 +6,8 @@ import Homepage from './pages/Homepage/Homepage'
 import Contact from './pages/Contact/Contact'
 import ProductDetails from './pages/ProductDetails/ProductDetails'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import CartContextProvider from './contexts/CartContext'
+import Cart from './pages/Cart/Cart'
 
 
 
@@ -18,22 +20,21 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
 
   return (
-      <div>
-        
         <BrowserRouter>
-          <Header />
+          <CartContextProvider>
+            <Header />
 
-            <Routes>
-                <Route path='/' element={<Homepage />} />
-                <Route path="/details/:productId" element=
-          { <ProductDetails />} />
-                <Route path="/contactus" element={<Contact />} />  
-            </Routes>
+              <Routes>
+                  <Route path='/' element={<Homepage />} />
+                  <Route path="/details/:productId" element={ <ProductDetails />} />
+                  <Route path="/contactus" element={<Contact />} />
+                  <Route path="/cart" element={<Cart />} />  
+              </Routes>
 
-          <Footer />
+            <Footer />
+          </CartContextProvider>
         </BrowserRouter>
-        
-      </div>
+
   )
 }
 

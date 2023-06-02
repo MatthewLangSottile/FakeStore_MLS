@@ -1,0 +1,8 @@
+.cart-page-container {
+    min-height: calc(100vh - 258px);
+}
+
+.cart-headers {
+    display: flex;
+    
+}

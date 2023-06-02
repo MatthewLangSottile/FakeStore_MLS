@@ -18,6 +18,11 @@
  font-size: 3.5em;
 }
 
+.cart-link:visited {
+    text-decoration: none;
+    color: var(--C_DarkBlue)
+}
+
 .cart-container {
     display: flex;
     margin-right: 50px;
