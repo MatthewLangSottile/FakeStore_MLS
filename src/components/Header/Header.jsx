@@ -13,9 +13,13 @@ function Header() {
       <Link to="/"><h1>Fake Store</h1></Link>
       <div className="cart-container">
         <Link to="/cart" className="cart-link"><AiOutlineShoppingCart className="cart-icon" /></Link>
-            <div className="cart-count-container">
+                {
+                (cart.length > 0) && 
+                <Link to="/cart"><div className="cart-count-container">
                 <p className="cart-count-label">{cart.length}</p>
-            </div>
+                </div>
+                </Link>
+                }
       </div>
     </div>
   )
