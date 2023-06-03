@@ -18,9 +18,9 @@
  font-size: 3.5em;
 }
 
-.cart-link:visited {
+.cart-link:visited, .cart-link {
     text-decoration: none;
-    color: var(--C_DarkBlue)
+    color: var(--C_DarkBlue) !important
 }
 
 .cart-container {
