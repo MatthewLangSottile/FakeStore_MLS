@@ -59,6 +59,7 @@
 
 .product-det-add-btn {
     background-color: var(--C_Yellow);
+    color: var(--C_Black);
 }
 
 .product-det-remove-btn {
