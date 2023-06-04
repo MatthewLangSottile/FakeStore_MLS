@@ -13,10 +13,8 @@
  --C_Red:  #F90505;
  --C_Yellow: #FFD814;
  background-color: var(--C_BG)
- /* background-color: black; */
-
-
 }
+
 *{
   margin: 0;
   padding: 0;
@@ -27,6 +25,5 @@
 
  a {
   text-decoration: none;
-  
 } 
 

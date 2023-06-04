@@ -1,6 +1,6 @@
 .homepage-container { 
     background-color: var(--C_BG);
-    padding: 0px 100px;
+    padding: 0px 100px 100px 100px;
     min-height: calc(100vh - 258px);
 }
 
@@ -47,7 +47,7 @@
     .filter-container {
         margin-left: auto;
         margin-right: auto;
-        justify-content: space-between;  
+        justify-content: space-between  
     }
 
     .filter-container button {
