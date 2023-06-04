@@ -49,9 +49,9 @@ function ProductDetails() {
           {         
                     //find array method will return the value if it found it or undefined if not found (which is false)
                     cart.find(item => item.id === product.id)?
-                    <button onClick={()=>removeProductFromCart(product.id)}>Remove from Cart</button>
+                    <button className="product-det-remove-btn" onClick={()=>removeProductFromCart(product.id)}>Remove from Cart</button>
                     :
-                    <button onClick={()=>addProductToCart(product)}>Add to Cart</button>
+                    <button className="product-det-add-btn" onClick={()=>addProductToCart(product)}>Add to Cart</button>
           }
        </div>
     </div>

@@ -12,6 +12,8 @@
  --C_IconGray: #E7E7E7;
  --C_Red:  #F90505;
  --C_Yellow: #FFD814;
+ background-color: var(--C_BG)
+ /* background-color: black; */
 
 
 }

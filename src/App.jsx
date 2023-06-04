@@ -7,7 +7,7 @@ import Contact from './pages/Contact/Contact'
 import ProductDetails from './pages/ProductDetails/ProductDetails'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CartContextProvider from './contexts/CartContext'
-import Cart from './pages/Cart/Cart'
+import Checkout from './pages/Checkout/Checkout'
 
 
 
@@ -28,7 +28,7 @@ function App() {
                   <Route path='/' element={<Homepage />} />
                   <Route path="/details/:productId" element={ <ProductDetails />} />
                   <Route path="/contactus" element={<Contact />} />
-                  <Route path="/cart" element={<Cart />} />  
+                  <Route path="/checkout" element={<Checkout />} />  
               </Routes>
 
             <Footer />

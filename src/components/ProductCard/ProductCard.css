@@ -7,7 +7,6 @@
     border-radius: 15px;
     width: 264px;
     height: 385px;
-/* background-color: blue; */
     justify-self: center;
 }
 
@@ -53,22 +52,28 @@
 
 }
 
+.product-details-area {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px;
+}
+
 .product-title {
     font-weight: 700;
-    padding: 5px 15px;
     text-decoration: none;
-    color: var(--C_Black)
-}
+    color: var(--C_Black);
+    margin-bottom: 10px;
+    }
 
 .product-category {
     color: var(--C_Gray);
     font-weight: 400;
-    padding: 5px 15px;
+    margin-bottom: 10px;
+
 }
 
 .product-price {
     font-weight: 600;
-    padding: 5px 15px;
 }
 
 
