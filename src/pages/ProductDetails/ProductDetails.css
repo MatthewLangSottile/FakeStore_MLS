@@ -82,14 +82,30 @@
         width: 75%;
         height: 500px;        
     }
+
+    .product-det-area h2 {
+        font-size: 16px;       
+    }
     
     .product-image-area img {
         max-width: 95%;
     }
 
+    .product-det-title {
+        font-size: 18px;
+    }
+
+    .product-det-price {
+        font-size: 20px;
+    }
+
+    .product-det-description {
+        font-size: 14px;
+    }
+
     .product-det-area button {
-       margin-left: auto;
-       margin-right: auto;
+       margin: 35px auto 0 auto;
+       
     }
   
   }

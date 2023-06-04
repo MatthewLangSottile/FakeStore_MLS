@@ -3,6 +3,7 @@ import "./ProductDetails.css"
 import { useParams } from "react-router-dom"
 import axios from "axios"
 import { CartContext } from '../../contexts/CartContext';
+import { textShaver } from 'text-shaver'
 
 
 function ProductDetails() {
@@ -42,7 +43,7 @@ function ProductDetails() {
         <p className="product-det-title">{product?.title}</p>
         <p className="product-det-price">${product?.price?.toFixed(2)} </p>
         <h2>Description</h2>
-        <p className="product-det-description">{product?.description} </p>
+        <p className="product-det-description">{textShaver(product?.description, {mode: 'words', preserveWords: true, limit: 75, suffix: " (...)"})} </p>
 
         {
           //find array method will return the value if it found it or undefined if not found (which is false)
