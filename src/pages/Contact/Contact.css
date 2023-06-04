@@ -35,6 +35,8 @@
     margin-bottom: 25px;
     padding: 10px;
     width: 292px; 
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .contact-form input::placeholder, .contact-form textarea::placeholder {
@@ -46,8 +48,9 @@
     background-color: var(--C_MedBlue);
     color: var(--C_White);
     border-style: none;
-    
     padding: 10px 35px;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 .contact-box h2 {

@@ -10,30 +10,23 @@ import CartContextProvider from './contexts/CartContext'
 import Checkout from './pages/Checkout/Checkout'
 
 
-
-
-
-
-
-
-
 function App() {
 
   return (
-        <BrowserRouter>
-          <CartContextProvider>
-            <Header />
+    <BrowserRouter>
+      <CartContextProvider>
+        <Header />
 
-              <Routes>
-                  <Route path='/' element={<Homepage />} />
-                  <Route path="/details/:productId" element={ <ProductDetails />} />
-                  <Route path="/contactus" element={<Contact />} />
-                  <Route path="/checkout" element={<Checkout />} />  
-              </Routes>
+        <Routes>
+          <Route path='/' element={<Homepage />} />
+          <Route path="/details/:productId" element={<ProductDetails />} />
+          <Route path="/contactus" element={<Contact />} />
+          <Route path="/checkout" element={<Checkout />} />
+        </Routes>
 
-            <Footer />
-          </CartContextProvider>
-        </BrowserRouter>
+        <Footer />
+      </CartContextProvider>
+    </BrowserRouter>
 
   )
 }

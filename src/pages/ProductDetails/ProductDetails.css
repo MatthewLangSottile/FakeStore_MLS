@@ -49,19 +49,21 @@
     font-weight: 400;
 }
 
-.product-det-add-btn {
-    background-color: var(--C_Yellow);
+.product-det-add-btn, .product-det-remove-btn {
     border-style: none;
     width: 158px;
     height: 43px;
+    font-size: 14px;
+    font-weight: 700;  
+}
+
+.product-det-add-btn {
+    background-color: var(--C_Yellow);
 }
 
 .product-det-remove-btn {
     background-color: var(--C_Black);
     color: var(--C_Yellow);
-    border-style: none;
-    width: 158px;
-    height: 43px;
 }
 
 

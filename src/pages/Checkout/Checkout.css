@@ -13,7 +13,7 @@
     text-align: center; 
     height: 65px;
     padding: 20px;
-    color: var(--C_Gray)
+    color: var(--C_MedGray)
 }
 
 .item-header {
@@ -51,6 +51,8 @@
     width: 158px;
     height: 43px;
     margin-bottom: 25px;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 .no-items-message {
@@ -65,9 +67,11 @@
     justify-content: space-evenly;
 }
 
-.checkout-modal-container p, .checkout-modal-container h4 {
+.checkout-modal-container h4 {
     width: 75%;
     text-align: center;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .checkout-modal-container button {
@@ -76,6 +80,8 @@
     background-color: var(--C_MedBlue);
     color: var(--C_White);
     border-style: none;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 

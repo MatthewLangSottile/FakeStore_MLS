@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Footer.css"
-import {FaHeart} from 'react-icons/fa'
-import {Link} from "react-router-dom";
+import { FaHeart } from 'react-icons/fa'
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (

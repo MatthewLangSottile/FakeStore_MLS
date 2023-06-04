@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas: 
-    "i i i t q r";
+    "i i i p q r";
     border-bottom: 2px solid var(--C_LtGray);
     height: 175px;
     text-align: center;
@@ -26,16 +26,27 @@
     grid-area: t;
     padding-left: 25px;
     text-decoration: none;
-    color: var(--C_Black) !important
+    color: var(--C_Black) !important;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.cart-product-price {
+    grid-area: p;
+    font-size: 20px;
+    font-weight: 600;
+
 }
 
 .cart-product-quantity {
     grid-area: q;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .cart-remove-btn {
     grid-area: r;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 
@@ -61,6 +72,18 @@
 
     .cart-product-title {
         padding: 0;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .cart-product-price {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .cart-product-quantity {
+        font-size: 16px;
+        font-weight: 600;
     }
 
     .cart-remove-btn {
