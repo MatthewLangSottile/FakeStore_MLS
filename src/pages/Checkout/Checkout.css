@@ -47,6 +47,7 @@
 
 .checkout-bottom button {
     background-color: var(--C_Yellow);
+    color: var(--C_Black);
     border-style: none;
     width: 158px;
     height: 43px;
@@ -112,6 +113,11 @@
     .checkout-bottom {
         text-align: center;
         margin: 25px auto 25px auto;
+    }
+
+    .checkout-modal-container h4 {
+        font-size: 16px;
+        font-weight: 600;
     }
   }
 
